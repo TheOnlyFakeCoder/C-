@@ -52,6 +52,8 @@ int main() {
             }
         }while(error);
     }
+    cout << "Lista de invitados: " << endl
+        << "--------------------------"<<endl;
     for(int i=0; i<n; i++){
         imprimirInfo(personas[i]);
     }
