@@ -1,5 +1,5 @@
-#ifndef STRAIGHTDURATION_H
-#define STRAIGHTDURATION_H
+#ifndef SONGS_H
+#define SONGS_H
 #include "Element.h"
 #include <string>
 using namespace std;
@@ -7,8 +7,10 @@ using namespace std;
 class Songs : Element {
     private:
         int duration;
+        string musicGenre;
     public:
         int getDuration();
+        string getMusicGenre();
         Songs();
         Songs(string,string,int,int);
         ~Songs();

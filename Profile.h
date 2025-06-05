@@ -7,14 +7,20 @@ class Profile {
     protected:
         string preferedGenre;
         int durationFormat;
-        int calification;
+        bool isEducational;
+        string musicGenre;
     public:
-        string getTitle();
-        string getGenre();
-        int getCalification();
+        string getPreferedGenre();
+        int getDurationFormat();
+        bool getIsEducational();
+        void setPreferedGenre(string);
+        void setDurationFormat(int);
+        void setIsEducational(bool);
+        void setMusicGenre(string);
+        void setMusicGenre();
         void addCalification();
         Profile();
-        Profile(string,int,int);
+        Profile(string,int,bool,string);
         ~Profile();
 };
 
