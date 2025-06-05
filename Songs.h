@@ -4,15 +4,17 @@
 #include <string>
 using namespace std;
 
-class Songs : Element {
+class Songs : public Element {
     private:
         int duration;
         string musicGenre;
     public:
         int getDuration();
         string getMusicGenre();
+        void setDuration(int _duration);
+        void setMusicGenre(string _musicGenre);
         Songs();
-        Songs(string,string,int,int);
+        Songs(string,string,int,int,string);
         ~Songs();
 };
 
